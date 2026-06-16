@@ -1,0 +1,18 @@
+from rich import print
+from classes import Aluno, Professor, Funcionario
+
+
+aluno1 = Aluno("Artur", 19, "Filosofia", "MF26")
+aluno1.aniversario()
+aluno1.fazer_matricula()
+
+professor1 = Professor("Miguel", 57, "Ciencias humanas", "Mestre")
+professor1.aniversario()
+professor1.dar_aula()
+
+funcionaria1 = Funcionario("Paula", 28, "secretaria", "secretaria")
+funcionaria1.picar_ponto()
+
+aluno1.estudar()
+professor1.estudar()
+funcionaria1.estudar()
