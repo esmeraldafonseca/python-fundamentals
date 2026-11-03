@@ -22,6 +22,7 @@ if 3 in n:
 else:
     print(f'Não existe numero 3 na lista {n}')
 
+print('Os numeros pares encontrados foram:', end=' ')
 for i in n:
     if i % 2 == 0:
-        print(f'Os numeros pares encontrados foram {i}', end=' ')
+        print(i, end=' ')
