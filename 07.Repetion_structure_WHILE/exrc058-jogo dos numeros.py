@@ -1,6 +1,6 @@
 from random import randint
 computador = randint(0,10)
-tentativas = 0
+tentativas = 1
 
 print('Sou o seu computador... Acabei de pensar em um numero entre 0 e 10!\n')
 print('Será que você consegue adivinhar qual foi?')
@@ -12,7 +12,7 @@ while n != computador :
         print('Estás perto, tenta subir um pouco mais')
         n = int(input('Qual é o teu palpite agora?: '))
     else:
-        print('Estás perto, tenta descer um pouco masi')
+        print('Estás perto, tenta descer um pouco mais')
         n = int(input('Qual é o teu palpite agora?: '))
 
 

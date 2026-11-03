@@ -4,8 +4,8 @@ n10 = 1
 
 
 while n10 <= 10 :
-    n1 += r
     print('{}, ' .format(n1), end='')
+    n1 += r
     n10 += 1
 
 

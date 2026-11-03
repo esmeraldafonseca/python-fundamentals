@@ -21,7 +21,7 @@ while k != 5 :
 
     elif k == 2:
         print('=' * 20)
-        print('MULTIPLICAÇÃ')
+        print('MULTIPLICAÇÃO')
         print('=' * 20)
         print('{} X {} = {}'.format(n1, n2, n1 * n2))
 
@@ -31,8 +31,10 @@ while k != 5 :
         print('=' * 20)
         if  n1 > n2 :
             print('{} > {}'.format(n1, n2))
-        else:
+        elif n2 > n1:
             print('{} > {}'.format(n2, n1))
+        else:
+            print('{} = {}'.format(n1, n2))
 
     elif k == 4 :
         print('=' * 20)
@@ -40,6 +42,9 @@ while k != 5 :
         print('=' * 20)
         n1 = int(input('Digite o primeiro valor:'))
         n2 = int(input('Digite o segundo valor:'))
+
+    elif k == 5:
+        print('A sair do programa...')
 
     else:
         print('Opção invalida, digite novamente')

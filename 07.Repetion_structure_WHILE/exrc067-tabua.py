@@ -12,4 +12,4 @@ while True :
     print('*' * 20)
 
 
-print('Comando invalido')
+print('FIM')

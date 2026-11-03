@@ -1,35 +1,30 @@
 from random import randint
 
-n = s = c = 0
+v = 0
 titulo = 'Par ou impar'
-rand = randint(1, 9)
 print('=' *30)
 print(f'{titulo:^27}')
 print('=' *30)
 
 
 while True :
-    escolha = str(input('PAR ou IMPAR:')).strip() .upper()
+    escolha = ' '
+    while escolha not in ('PAR', 'IMPAR'):
+        escolha = str(input('PAR ou IMPAR:')).strip() .upper()
     n = int(input('Digite o número:'))
-    if escolha == 'IMPAR':
-        if (n + rand) % 2 != 0:
-            print(f'''GANHASTE
-            Eu escolhi {rand} e tu {n} ''')
-        elif (n + rand) % 2 != 0:
-            print(f'''PERDESTE
-            Eu escolhi {rand} e tu {n} ''')
-            break
+    rand = randint(0, 10)
+    total = n + rand
+    if total % 2 == 0:
+        resultado = 'PAR'
+    else:
+        resultado = 'IMPAR'
 
-   ''' elif escolha == 'PAR':
-        if (n + rand) % 2 == 0 :
-            print(f'''GANHASTE
-            Eu escolhi {rand} e tu {n} ''')
-        elif (n + rand) % 2 == 0 :
-            print(f'''PERDESTE
-            Eu escolhi {rand} e tu {n} ''')
-            break
+    print(f'Eu escolhi {rand} e tu {n}. Total {total} deu {resultado}')
+    if escolha == resultado:
+        print('GANHASTE')
+        v += 1
+    else:
+        print('PERDESTE')
+        break
 
-print('FIM')
-'''
-
-
+print(f'FIM. Ganhaste {v} vez(es) seguidas')

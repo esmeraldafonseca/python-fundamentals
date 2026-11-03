@@ -3,7 +3,7 @@ print('Sequensecia de Fibonate')
 print('=' * 30)
 
 n = int(input('Digite quantos termos queres ver:'))
-contador = 0
+contador = 2
 t1 = 0
 t2 = 1
 
