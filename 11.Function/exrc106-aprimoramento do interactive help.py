@@ -20,7 +20,7 @@ def titulo(text, cor=0):
 
 
 def ajuda(comando):
-    titulo(f'A acessar o manuel de comandos...')
+    titulo(f'A acessar o manual de comandos...')
     sleep(1.5)
     print(c[6])
     help(comando)

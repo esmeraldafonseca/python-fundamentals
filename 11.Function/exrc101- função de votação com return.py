@@ -9,7 +9,7 @@ def votação(ano):
     anos = datetime.now().year - ano
     if anos < 18:
         return f'Com {anos}: NÃO VOTA'
-    elif anos >= 18 and anos < 60:
+    elif anos >= 18 and anos < 65:
         return f'Com {anos}: VOTA OBRIGATORIA'
     elif anos >= 65:
       return f'Com {anos}: VOTO OPCIONAL'

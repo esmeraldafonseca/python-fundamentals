@@ -1,4 +1,4 @@
-def factorial(numero, show='False'):
+def factorial(numero, show=False):
     """
     Um programa que mostra o factorial de um numero
     :param numero:O numero para calcular o factorial

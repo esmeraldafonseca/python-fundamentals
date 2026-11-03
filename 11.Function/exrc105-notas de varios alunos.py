@@ -24,7 +24,7 @@ def notas(*nota, sit=False):
         if n1['media'] >=7:
             n1['Situação'] = "BOA"
         elif n1['media'] <=7 and n1['media'] > 5:
-            n1['Situação'] = "RAZOVEL"
+            n1['Situação'] = "RAZOÁVEL"
         else:
             n1['Situação'] = "MA"
 

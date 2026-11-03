@@ -10,7 +10,7 @@ def maior(*numeros):
         print(f'{v} ', end='')
         sleep(0.5)
         if cont ==0:
-            m > v
+            m = v
         else:
             if v > m:
                 m=v
