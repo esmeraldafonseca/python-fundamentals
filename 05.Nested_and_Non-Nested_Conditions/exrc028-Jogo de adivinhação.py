@@ -1,10 +1,10 @@
 from random import randint
 from time import sleep
 print('-==' *23)
-print('Eu vou pensar em um número entre o e 5, tenta adivinhar qual foi')
+print('Eu vou pensar em um número entre 0 e 5, tenta adivinhar qual foi')
 print('-==' *23)
 
-n = randint(1, 5)
+n = randint(0, 5)
 n1 = int(input('Digite o seu número: '))
 print('PROCESSANDO...')
 sleep(2)

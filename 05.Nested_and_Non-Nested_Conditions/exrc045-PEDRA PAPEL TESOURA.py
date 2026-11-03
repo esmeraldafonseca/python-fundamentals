@@ -7,9 +7,9 @@ computador = randint(0, 2)
 print('{:=^23}'.format('JOGO'))
 
 print('''
-[1] PEDRA
-[2] PAPEL
-[3] TESOURA
+[0] PEDRA
+[1] PAPEL
+[2] TESOURA
 ''')
 jogador = int(input('Qual é a sua jogada?'))
 
@@ -23,8 +23,8 @@ print('=-' * 15)
 print('Computador jogou {}'.format(itens[computador]))
 print('Jpgador jogou {}'.format(itens[jogador]))
 
-if computador == 1 :
-    if jogador == 1 :
+if computador == 0 :
+    if jogador == 0 :
         print('EMPATE')
 
     elif jogador == 1 :
@@ -37,19 +37,19 @@ if computador == 1 :
 
 elif computador == 1 :
     if jogador == 0:
-        print('VENCESTE')
+        print('PERDESTE')
     elif jogador == 1 :
         print('EMPATE')
     elif jogador == 2 :
-        print('PERDESTE')
+        print('VENCESTE')
     else:
         print('Opção invalida')
 
 elif computador == 2 :
     if jogador == 0:
-        print('PERDESTE')
-    elif jogador == 1 :
         print('VENCESTE')
+    elif jogador == 1 :
+        print('PERDESTE')
 
     elif jogador == 2 :
         print('EMPATE')
