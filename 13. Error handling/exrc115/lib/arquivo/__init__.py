@@ -1,4 +1,4 @@
-from exrc115.lib.interface import *
+from lib.interface import *
 
 def arquivoExiste(txt):
     try:
@@ -32,7 +32,6 @@ def lerArquivo(txt):
             dado=item.split(';')
             dado[1] = dado[1].replace('\n','')
             print(f'{dado[0]:<30}{dado[1]:>3} anos')
-    finally:
         a.close()
 
 def cadastrar(arq, nome='DESCONHECIDO', idade=0):

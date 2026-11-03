@@ -15,7 +15,7 @@ def leiaFloat(msg):
         try:
             n = float(input(msg))
         except (ValueError, TypeError):
-            print(f'\033[31mERRO. Por favor digite um numero inteiro valido!\033[m')
+            print(f'\033[31mERRO. Por favor digite um numero decimal valido!\033[m')
         except(KeyboardInterrupt):
             print('\033[31m ERRO. Campo vazio!\033[m')
         else:
@@ -25,3 +25,5 @@ def leiaFloat(msg):
 #programa principal
 n = leiaInt("Digite um numero interio: ")
 n1 = leiaFloat("Digite um numero decimal: ")
+print(n)
+print(n1)

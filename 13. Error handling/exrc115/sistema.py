@@ -1,5 +1,5 @@
-from exrc115.lib.interface import *
-from exrc115.lib.arquivo import *
+from lib.interface import *
+from lib.arquivo import *
 from time import sleep
 
 arq = 'Python'
