@@ -1,6 +1,6 @@
 from os.path import split
 
-nome = str(input('Digite o seu nome completo:')) .strip() .capitalize()
+nome = str(input('Digite o seu nome completo:')) .strip()
 
 separador = nome.split()
 
