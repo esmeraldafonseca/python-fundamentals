@@ -14,13 +14,13 @@ print("-"*30)
 QntPalpites = int(input("Quantos palpites queres gerar?:"))
 
 while total <= QntPalpites:
-    cont += 1
+    cont = 0
     while True :
         sorte = randint(1, 60)
         if sorte not in palpite:
             palpite.append(sorte)
             cont += 1
-        elif cont >= 6:
+        if cont >= 6:
             break
     palpite.sort()
     jogos.append(palpite[:])

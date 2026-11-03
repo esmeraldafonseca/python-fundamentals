@@ -4,13 +4,13 @@ for simb in expressao:
     if simb == '(':
         veri.append('(')
     elif simb == ')':
-        if veri[-1] == ')':
+        if len(veri) > 0:
             veri.pop()
         else :
             veri.append(')')
             break
 
-if veri[-1] == 0:
+if len(veri) == 0:
     print("A sua expressao esta correta")
 else:
     print("A sua expressao não esta correta")
