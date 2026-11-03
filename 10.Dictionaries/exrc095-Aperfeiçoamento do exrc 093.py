@@ -8,7 +8,7 @@ while True:
     jogos = int(input(f'Quantas partidas o {player['Nome']} jogou: '))
     golos.clear()
     for i in range(0, jogos):
-        golos.append(int(input(f'  Quantos golos na partida {i}: ')))
+        golos.append(int(input(f'  Quantos golos na partida {i + 1}: ')))
 
     player['Golos'] = golos[:]
     player['Total'] = sum(golos)
