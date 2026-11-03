@@ -1,7 +1,7 @@
 somadasidade = 0
 mediaidade = 0
 velhoidade = 0
-velhonome = 0
+velhonome = ''
 jovemidade = 0
 for n in range(1, 5):
     print('='  * 30)
@@ -9,13 +9,13 @@ for n in range(1, 5):
     print('=' * 30)
     idade = int(input('Digite a sua idade: '))
     nome = str(input('Digite o nome: ')) .strip()
-    genero = str(input('Digite o genro [M/F]:')).strip() .upper()
+    genero = str(input('Digite o genero [M/F]:')).strip() .upper()
     somadasidade += idade
 
 
     if n == 1 and genero == 'M':
-        velhoidade += idade
-        velhonome += nome
+        velhoidade = idade
+        velhonome = nome
     else:
         if velhoidade < idade and genero == 'M':
             velhoidade = idade
