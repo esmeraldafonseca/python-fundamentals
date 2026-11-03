@@ -7,8 +7,8 @@ def main():
     print()
 
     quadrado = Quadrado(8)
-    print(f"O perimetro de um quadrado com {quadrado.lado}cm de raio é de {quadrado.Perimetro():.1f}cm")
-    print(f"A area de um quadrado com {quadrado.lado}cm de raio é de {quadrado.Area():.1f}cm²")
+    print(f"O perimetro de um quadrado com {quadrado.lado}cm de lado é de {quadrado.Perimetro():.1f}cm")
+    print(f"A area de um quadrado com {quadrado.lado}cm de lado é de {quadrado.Area():.1f}cm²")
     
 if __name__ == "__main__":
     main()

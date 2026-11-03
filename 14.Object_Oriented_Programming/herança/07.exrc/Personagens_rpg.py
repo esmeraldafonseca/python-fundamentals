@@ -10,7 +10,7 @@ class Personagens(ABC):
     def atacar(self, alvo, forca=50):
         if self.vida > 0 and alvo.vida > 0: 
             golpe = self.golpes[randrange(0, len(self.golpes))]
-            print(f"{self.nome} atacou atacou {alvo.nome} com um {golpe}")
+            print(f"{self.nome} atacou {alvo.nome} com um {golpe}")
             alvo.receber_danos(forca)
         else:
             print(f"O ataque {self.nome} -> {alvo.nome} não pode acontecer")
@@ -38,7 +38,7 @@ class Guerreiro(Personagens):
     def curar(self):
         fator = randint(0, 100)
         self.vida += fator
-        print(f"O {self.nome} enrolou uma atacura no ferimento e recuperou {fator} pontos de vida")
+        print(f"O {self.nome} enrolou uma atadura no ferimento e recuperou {fator} pontos de vida")
 
 class Mago(Personagens):
     def __init__(self, nome, vida):
@@ -50,4 +50,4 @@ class Mago(Personagens):
     def curar(self):
         fator = randint(0, 100)
         self.vida += fator
-        print(f"O {self.nome} fez um feitiço de cura e recuperou {fator} pontps de vida")
+        print(f"O {self.nome} fez um feitiço de cura e recuperou {fator} pontos de vida")

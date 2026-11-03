@@ -7,4 +7,4 @@ class Professor(Pessoas):
         self.nivel = nivel
 
     def dar_aula(self):
-        print(f"A aula acabou de coemçar")
+        print(f"A aula acabou de começar")

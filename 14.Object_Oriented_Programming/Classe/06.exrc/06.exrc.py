@@ -7,18 +7,18 @@ class Caneta:
     """
     def __init__(self, cor):
         cores_validas = ["vermelha", "azul", "verde"]
-        self.tampa = False
+        self.tampa = True
         if cor.lower() in cores_validas:
             self.cor = cor.lower()
         else:
             raise Exception ("Caneta inexistente")
 
     def tampar(self):
-        self.tampa = False
+        self.tampa = True
         return self.tampa
 
     def destampar(self):
-        self.tampa = True
+        self.tampa = False
         return self.tampa
 
     def quebrar_linha(self, quantidade):
@@ -26,7 +26,7 @@ class Caneta:
 
 
     def escrever(self, conteudo):
-        if self.tampa:
+        if not self.tampa:
             match self.cor:
                 case "azul":
                     print(f"[blue]{conteudo}[/]")

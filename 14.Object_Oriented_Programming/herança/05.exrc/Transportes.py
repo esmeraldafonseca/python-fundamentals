@@ -8,7 +8,7 @@ class Transportes(ABC):
         self.frete = 0
 
     @abstractmethod
-    def calcular_frete():
+    def calcular_frete(self):
         return
 
 
@@ -43,7 +43,7 @@ class Drone(Transportes):
 
     def calcular_frete(self):
         if self.distancia > 10:
-            return "0. So são feitas entregas de drone para uma distancia inderior a 10km"
+            return "0. So são feitas entregas de drone para uma distancia inferior a 10km"
         
         else:
             return self.distancia * self.fator

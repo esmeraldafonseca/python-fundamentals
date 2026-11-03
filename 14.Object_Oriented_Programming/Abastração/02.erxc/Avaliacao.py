@@ -6,11 +6,11 @@ class Avaliacao():
 
 
 #metodos acessores
-    def get_nota(self): #metodo setter
+    def get_nota(self): #metodo getter
         return self._nota
 
 
-    def set_nota(self, valor): #metodo getter
+    def set_nota(self, valor): #metodo setter
         if 0 <= valor <= 10:
             self._nota = valor
         else:

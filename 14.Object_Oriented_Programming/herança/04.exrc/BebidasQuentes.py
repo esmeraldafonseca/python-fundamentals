@@ -52,10 +52,10 @@ class leite(BebidasQuentes):
         super().__init__()
     
     def misturar(self):
-        return "Dissolver o leite em po instantanio na agua quente"
+        return "2- Dissolver o leite em po instantanio na agua quente"
     
     
     def servir(self):
-        return "Servir em uma caneca."
+        return "3- Servir em uma caneca."
 
 

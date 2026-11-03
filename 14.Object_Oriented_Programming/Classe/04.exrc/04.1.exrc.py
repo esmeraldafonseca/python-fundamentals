@@ -9,15 +9,12 @@ class Livro:
 
 
     def avancar_pagina(self, quantidade):
-    
-
-        while True:
-            if quantidade >= self.total_paginas :
-                print("Livro acabou")
-                break
-
-            if quantidade <= self.total_paginas:
-                pass
+        if self.pagina_actual + quantidade >= self.total_paginas:
+            self.pagina_actual = self.total_paginas
+            print("Livro acabou")
+        else:
+            self.pagina_actual += quantidade
+            print(f"Estás na pagina {self.pagina_actual}")
             
 
         

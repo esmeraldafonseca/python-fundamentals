@@ -8,18 +8,17 @@ class Livro:
         print(f"""Acabaste de abrir o livro {self.titulo}, que tem {self.total_paginas} paginas. Estas na paginas {self.pagina_actual}""")
         
     def __str__(self):
-        return 
+        return f"{self.titulo}: pagina {self.pagina_actual} de {self.total_paginas}"
 
     def avancar_pagina(self, quantidade =1):
         contador = 0
-        print(f"Avançaste {contador}.",  end=" ")
         for paginas in range(0, quantidade, 1):
             if not self.fim_do_livro():
                 self.pagina_actual += 1                
                 print(f"{self.pagina_actual} =>", end="")
                 time.sleep(0.3)
                 contador+=1
-        print(f"Agora estás na pagina {self.pagina_actual}")
+        print(f" Avançaste {contador}. Agora estás na pagina {self.pagina_actual}")
 
         if self.fim_do_livro():
             print("Chegaste ao final do livro")
