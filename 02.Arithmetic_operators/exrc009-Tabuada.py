@@ -5,6 +5,10 @@ r2 = int(3 * n1)
 r3 = int(4 * n1)
 r4 = int(5 * n1)
 r5 = int(6 * n1)
+r6 = int(7 * n1)
+r7 = int(8 * n1)
+r8 = int(9 * n1)
+r9 = int(10 * n1)
 
 
 print('{} X 1 = {:=^1}' .format(n1, r))
@@ -13,5 +17,9 @@ print('{} X 3 = {:=^1}' .format(n1, r2))
 print('{} X 4 = {:=^1}' .format(n1, r3))
 print('{} X 5 = {:=^1}' .format(n1, r4))
 print('{} X 6 = {:=^1}' .format(n1, r5))
+print('{} X 7 = {:=^1}' .format(n1, r6))
+print('{} X 8 = {:=^1}' .format(n1, r7))
+print('{} X 9 = {:=^1}' .format(n1, r8))
+print('{} X 10 = {:=^1}' .format(n1, r9))
 
 
