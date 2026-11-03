@@ -7,7 +7,9 @@ def main():
     casa3 = Casa(6, 4, 5)
     print(casa1.descricao())
     casa_filtrada =Casa.filto_quartos(4)
-    print(casa_filtrada)
+    for casa in casa_filtrada:
+        print()
+        print(casa.descricao())
 
 if __name__ == "__main__":
     main()

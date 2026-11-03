@@ -20,6 +20,6 @@ def aprovados_alunos(alunos):
     aprovados = []
     for itens in alunos:
         if itens["Notas"] >= 10:
-            aprovados.append(itens)
+            aprovados.append(itens["Nome"])
     return aprovados
 

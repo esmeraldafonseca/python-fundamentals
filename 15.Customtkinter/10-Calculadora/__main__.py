@@ -30,6 +30,15 @@ def main():
             num2 = float(text2.get())
         except:
             resultado.configure(text="Tente novamente")
+            return
+
+        if operador == "":
+            resultado.configure(text="Escolha a operação")
+            return
+
+        if operador == "/" and num2 == 0:
+            resultado.configure(text="Divisão por zero")
+            return
 
         match operador:
             case "+":

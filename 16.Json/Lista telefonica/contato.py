@@ -10,6 +10,7 @@ def carregar_contatos():
             return json.load(f)
     except:
         print("Ficheiro não encontrado, a começar do zero.")
+        return []
         
 
 def atualiza_numero(nome, novo_numero):
@@ -25,7 +26,7 @@ def apagar_contatos(nome):
     nova_lista=[]
     for item in contatos:
         if item["Nome"] != nome:
-            nova_lista.append(item["Nome"])
+            nova_lista.append(item)
     
 
     guardar_contatos(nova_lista)
